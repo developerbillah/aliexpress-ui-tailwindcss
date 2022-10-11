@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./dist/**/*.html"],
   theme: {
-    extend: {},
+    fontFamily: {
+      openSans : ['Open Sans', 'sans-serif'],
+    },
+    extend: {
+      colors: {
+        hoverColor : "#FA5156",
+      }
+    },
   },
   plugins: [],
 }
