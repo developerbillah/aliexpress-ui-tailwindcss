@@ -17,7 +17,7 @@
         <!-- Header Top -->
         <div class="header_top bg-gray-50 border-b-[0.1rem]">
             <div class="container mx-auto">
-                <div class="topbarContent flex justify-end divide-x-2">
+                <div class="topbarContent flex justify-end divide-x-[0.1rem]">
                     <a href="" class="topLink">Sell on AliExpress</a>
                     <a href="" class="topLink">Help</a>
                     <a href="" class="topLink">Buyer Protection</a>
@@ -39,7 +39,7 @@
         </div>
 
         <!-- Main Header -->
-        <div class="container mx-auto flex items-center justify-between py-5 space-x-10 pl-5 pr-40">
+        <div class="container mx-auto flex justify-between py-5 space-x-10 pl-10 pr-40">
             <!-- Logo -->
             <a href="">
                 <img src="./assets/img/logo.png" class="h-10" alt="">
@@ -54,24 +54,24 @@
                                 <option value="All Categories">All Categories</option>
                             </select>
                         </div>
-                        <button class="w-12 h-10 bg-hoverColor text-white rounded-r-md">
+                        <button class="searchBtn">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
                 </div>
                 <div>
-                    <a href="" class="text-xs text-gray-500 px-2 border-r-[0.1rem]">rings for wooman</a>
-                    <a href="" class="text-xs text-gray-500 px-2 border-r-[0.1rem]">pokemon</a>
-                    <a href="" class="text-xs text-gray-500 px-2 border-r-[0.1rem]">netflix</a>
-                    <a href="" class="text-xs text-gray-500 px-2 border-r-[0.1rem]">crocs charms</a>
-                    <a href="" class="text-xs text-gray-500 px-2 border-r-[0.1rem]">fishing</a>
-                    <a href="" class="text-xs text-gray-500 px-2 border-none">bracelet</a>
+                    <a href="" class="searchSuggest">rings for wooman</a>
+                    <a href="" class="searchSuggest">pokemon</a>
+                    <a href="" class="searchSuggest">netflix</a>
+                    <a href="" class="searchSuggest">crocs charms</a>
+                    <a href="" class="searchSuggest">fishing</a>
+                    <a href="" class="searchSuggest">bracelet</a>
                 </div>
             </div>
 
             <!-- Cart -->
             <div class="cart relative">
-                <a href="" class="hover:text-hoverColor transition duration-500">
+                <a href="" class="hover:text-redPraimay transition duration-500">
                     <span class="text-4xl"><i class="fa-brands fa-opencart"></i></span>
                     <span class="cartText">0</span>
                 </a>
@@ -79,5 +79,88 @@
         </div>
     </header>
     <!-- Header End -->
+
+    <!-- Carousel Section -->
+    <section class="bg-gray-100">
+        <!-- Container -->
+        <div class="container mx-auto flex justify-between space-x-4">
+            <!-- Category List -->
+            <div class="cateogyList bg-white my-4 rounded-md w-[22%]">
+                <button class="flex space-x-2 font-extrabold px-5 pb-5 pt-2">
+                    <span><i class="fa-solid fa-list"></i></span>
+                    <span>Categories</span>
+                </button>
+
+                <div class="categories">
+                    <a href="" class="singleSideCat">
+                        <span class="text-md"><i class="fa-solid fa-shirt"></i></span>
+                        <span>Woman's Fashion</span>
+                    </a>
+                    <a href="" class="singleSideCat">
+                        <span class="text-md"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                        <span>Phones & Telecommunications</span>
+                    </a>
+                    <a href="" class="singleSideCat">
+                        <span class="text-md"><i class="fa-solid fa-laptop"></i></span>
+                        <span>Computer, Office & Security</span>
+                    </a>
+                    <a href="" class="singleSideCat">
+                        <span class="text-md"><i class="fa-regular fa-lightbulb"></i></span>
+                        <span>Consumer Electronics</span>
+                    </a>
+                    <a href="" class="singleSideCat">
+                        <span class="text-md"><i class="fa-brands fa-watchman-monitoring"></i></span>
+                        <span>Jewelry & Watches</span>
+                    </a>
+                    <a href="" class="singleSideCat">
+                        <span class="text-md">
+                            <i class="fa-solid fa-chair"></i>
+                        </span>
+                        <span>Home, Pet & Appliances</span>
+                    </a>
+                    <a href="" class="singleSideCat">
+                        <span class="text-md">
+                            <i class="fa-solid fa-suitcase-rolling"></i>
+                        </span>
+                        <span>Bags & Shoes</span>
+                    </a>
+                    <a href="" class="singleSideCat">
+                        <span class="text-md">
+                            <i class="fa-solid fa-basketball"></i>
+                        </span>
+                        <span>Toys, Kids & Babies</span>
+                    </a>
+                    <a href="" class="singleSideCat">
+                        <span class="text-md">
+                            <i class="fa-regular fa-building"></i>
+                        </span>
+                        <span>Tools, Home Improvement</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slider -->
+            <div class="sliderArea flex-1 my-4 bg-white">
+
+            </div>
+
+            <!-- Right Sidebar -->
+            <div class="rightSidebar my-4 w-[22%] bg-white">
+
+                <div class="relative">
+                    <img src="./assets/img/righ-userbg.png" alt="" class="">
+                    <div class="userRegistration absolute top-8 left-0 right-0">
+                        <img src="./assets/img/11.webp" alt="" class="h-16 mx-auto ">
+                        <h3 class="text-center font-extrabold">Welcome to AliExpress</h3>
+                        <div class="group flex justify-around mx-5 mt-5">
+                            <button class="px-5 py-2 text-sm bg-gradient-to-r from-redPraimay to-redSecondary text-white rounded-full font-semibold">Register</button>
+                            <button class="px-5 py-2 text-sm bg-gray-300 rounded-full font-semibold">Sign In</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 </body>
 </html>

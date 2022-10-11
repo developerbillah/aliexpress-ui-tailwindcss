@@ -5,21 +5,38 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-gradient{
+    @apply bg-gradient-to-r from-redPraimay to-redSecondary;
+}
+
 /* Top Link */
 .topLink{
-    @apply flex justify-between items-center text-sm font-light py-2 px-4 hover:text-hoverColor transition duration-500 hover:bg-white;
+    @apply flex justify-between items-center text-xs font-light py-[0.3rem] px-4 hover:text-redPraimay transition duration-500 hover:bg-white;
 }
 
 /* Searchbar */
 .searchInput{
-    @apply w-full px-5 py-1.5 border-[2px] border-hoverColor rounded-md focus:outline-none placeholder:text-sm;
+    @apply w-full px-5 py-1.5 border-[2px] border-redPraimay rounded-md focus:outline-none placeholder:text-sm;
+}
+
+.searchBtn{
+    @apply w-12 h-10 bg-gradient-to-r from-redPraimay to-redSecondary text-white rounded-r-md;
 }
 
 .searchCatSelect{
     @apply h-10 w-36 inline-block text-sm text-gray-500 px-4 mr-4 border-l-[0.1rem] bg-transparent focus:outline-none;
 }
 
+.searchSuggest{
+    @apply text-xs text-gray-500 px-2 border-r-[0.1rem] hover:text-redPraimay;
+}
+
 /* Cart Text */
 .cartText{
-    @apply absolute top-0 -right-3 w-6 h-6 flex items-center justify-center bg-hoverColor text-white rounded-full;
+    @apply absolute top-0 -right-3 w-6 h-6 flex items-center justify-center bg-gradient-to-r from-redPraimay to-redSecondary text-white rounded-full;
 }
+
+.singleSideCat{
+    @apply flex space-x-3 text-sm text-gray-800 px-5 py-3 transition duration-500 hover:font-bold hover:text-redPraimay hover:border-l-2 hover:shadow-sm;
+}
+
