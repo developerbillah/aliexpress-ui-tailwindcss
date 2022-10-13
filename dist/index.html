@@ -87,7 +87,7 @@
         <!-- Container -->
         <div class="container mx-auto flex justify-between space-x-4">
             <!-- Category List -->
-            <div class="cateogyList bg-white my-4 rounded-md w-[22%]">
+            <div class="cateogyList bg-white my-4 rounded-md w-[22%] block overflow-hidden">
                 <button class="flex space-x-2 font-extrabold px-5 pb-5 pt-2">
                     <span><i class="fa-solid fa-list"></i></span>
                     <span>Categories</span>
@@ -119,6 +119,14 @@
                         <span>Jewelry & Watches</span>
                     </a>
                     <a href="" class="singleSideCat">
+                        <span class="text-md"><i class="fa-solid fa-gift"></i></span>
+                        <span>Gifts & Special Offer</span>
+                    </a>
+                    <a href="" class="singleSideCat">
+                        <span class="text-md"><i class="fa-solid fa-truck-fast"></i></span>
+                        <span>Bus, Tracks & Vehicle</span>
+                    </a>
+                    <a href="" class="singleSideCat">
                         <span class="text-md">
                             <i class="fa-solid fa-chair"></i>
                         </span>
@@ -146,7 +154,7 @@
             </div>
 
             <!-- Slider -->
-            <div class="sliderArea w-[56%] my-4">
+            <div class="sliderArea w-[56%] my-4 block overflow-hidden">
                 <div class="sliderCategory space-x-8 mb-4">
                     <a href="" class="text-lg uppercase font-bold text-amber-500">plus</a>
                     <a href="" class="carouselCat">Cool Home Gadget</a>
@@ -262,19 +270,82 @@
             </div>
 
             <!-- Right Sidebar -->
-            <div class="rightSidebar my-4 w-[22%] bg-white">
+            <div class="rightSidebar my-4 w-[22%] bg-white block overflow-hidden">
 
+                <!-- Registration Section -->
                 <div class="relative">
                     <img src="./assets/img/righ-userbg.png" alt="" class="">
                     <div class="userRegistration absolute top-8 left-0 right-0">
                         <img src="./assets/img/11.webp" alt="" class="h-16 mx-auto ">
                         <h3 class="text-center font-extrabold">Welcome to AliExpress</h3>
-                        <div class="group flex justify-around mx-5 mt-5">
+                        <div class="group flex justify-around mx-5 mt-5 overflow-hidden">
                             <button class="px-5 py-2 text-sm bg-gradient-to-r from-redPraimay to-redSecondary text-white rounded-full font-semibold">Register</button>
+
                             <button class="px-5 py-2 text-sm bg-gray-300 rounded-full font-semibold">Sign In</button>
                         </div>
                     </div>
                 </div>
+                <!-- Reegistration Section End -->
+
+                <!-- Exclusive Offer -->
+                <div class="bg-[url('/dist/assets/img/13.jpeg')] bg-cover bg-no-repeat bg-right px-3 py-4 m-3 mt-24 rounded-md overflow-hidden">
+                    <p class="text-white text-sm">Exclusive Offers</p>
+                    <h2 class="text-white font-bold text-[1.2rem] leading-6 mt-1">Just for new AliExpres members!</h2>
+
+
+                    <div class="owl-carousel owl-theme relative block overflow-hidden mt-32" id="newMOffer">
+                       
+                        <div class="item">
+                            <div class="bg-white rounded-md text-center">
+                                <div class="thumb p-2">
+                                    <img src="./assets/img/22.jpeg" alt="" class="object-cover max-h-20">
+                                </div>
+
+                                <div class="cartContent -mt-4 pb-3">
+                                    <button class="px-3 py-[0.20rem] rounded-full bg-gradient-to-r from-redPraimay to-redSecondary text-sm font-bold text-white">BDT 1.02</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="bg-white rounded-md text-center">
+                                <div class="thumb p-2">
+                                    <img src="./assets/img/31.jpeg" alt="" class="object-cover max-h-20">
+                                </div>
+
+                                <div class="cartContent -mt-4 pb-3">
+                                    <button class="px-3 py-[0.20rem] rounded-full bg-gradient-to-r from-redPraimay to-redSecondary text-sm font-bold text-white">BDT 1.02</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="bg-white rounded-md text-center">
+                                <div class="thumb p-2">
+                                    <img src="./assets/img/32.jpeg" alt="" class="object-cover	max-h-20">
+                                </div>
+
+                                <div class="cartContent -mt-4 pb-3">
+                                    <button class="px-3 py-[0.20rem] rounded-full bg-gradient-to-r from-redPraimay to-redSecondary text-sm font-bold text-white">BDT 1.02</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="bg-white rounded-md text-center">
+                                <div class="thumb p-2">
+                                    <img src="./assets/img/33.jpeg" alt="" class="object-cover	max-h-20">
+                                </div>
+
+                                <div class="cartContent -mt-4 pb-3">
+                                    <button class="px-3 py-[0.20rem] rounded-full bg-gradient-to-r from-redPraimay to-redSecondary text-sm font-bold text-white">BDT 1.02</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Exclusive Offer End -->
                 
             </div>
         </div>
@@ -301,11 +372,22 @@
             $('#bannerDC').owlCarousel({
                 loop:true,
                 autoplay:true,
-                autoplayTimeout:3000,
+                autoplayTimeout:3500,
                 autoplayHoverPause:false,
                 margin:5,
                 nav:true,
                 items: 4,
+                dots: false,
+            });
+
+            $('#newMOffer').owlCarousel({
+                loop:true,
+                autoplay:true,
+                autoplayTimeout:3500,
+                autoplayHoverPause:false,
+                margin:10,
+                nav:true,
+                items: 2,
                 dots: false,
             });
     
