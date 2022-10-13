@@ -40,3 +40,27 @@
     @apply flex space-x-3 text-sm text-gray-800 px-5 py-3 transition duration-500 hover:font-bold hover:text-redPraimay hover:border-l-2 hover:shadow-sm;
 }
 
+/* Carusel Category */
+.carouselCat{
+    @apply text-lg font-bold hover:text-redPraimay transition duration-500;
+}
+
+/* Carousel Next, Prev & Indicator */
+
+
+.owl-next{
+    @apply absolute right-0 top-1/3 h-10 w-5 text-2xl;
+}
+
+.owl-prev{
+    @apply absolute left-0 top-1/3 h-10 w-5 text-2xl
+}
+
+.owl-dots{
+    @apply absolute bottom-2 left-0 right-0;
+}
+
+.owl-theme .owl-dots .owl-dot.active span{
+    @apply bg-gradient-to-r from-redPraimay to-redSecondary w-5 h-2;
+}
+

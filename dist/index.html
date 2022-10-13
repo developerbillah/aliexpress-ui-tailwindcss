@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AliExpress Clone Using Tailwind CSS</title>
 
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
     <!-- Foontawesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <!-- Link CSS -->
@@ -140,7 +142,38 @@
             </div>
 
             <!-- Slider -->
-            <div class="sliderArea flex-1 my-4 bg-white">
+            <div class="sliderArea w-[56%] my-4">
+                <div class="sliderCategory space-x-8 mb-4">
+                    <a href="" class="text-lg uppercase font-bold text-amber-500">plus</a>
+                    <a href="" class="carouselCat">Cool Home Gadget</a>
+                    <a href="" class="carouselCat">Super Deals</a>
+                    <a href="" class="carouselCat">New User Zone</a>
+                </div>
+
+                <!-- Carousel Section -->
+                <div class="owl-carousel owl-theme relative" id="bannerCarousel">
+                    <div class="item w-full">
+                        <img src="./assets/img/16.webp" alt="" class="rounded-md w-full">
+                    </div>
+                    <div class="item w-full">
+                        <img src="./assets/img/12.webp" alt="" class="rounded-md w-full">
+                    </div>
+                    <div class="item w-full">
+                        <img src="./assets/img/13.webp" alt="" class="rounded-md w-full">
+                    </div>
+                    <div class="item w-full">
+                        <img src="./assets/img/14.webp" alt="" class="rounded-md w-full">
+                    </div>
+                    <div class="item w-full">
+                        <img src="./assets/img/15.webp" alt="" class="rounded-md w-full">
+                    </div>
+                    <div class="item w-full">
+                        <img src="./assets/img/104.png" alt="" class="rounded-md w-full">
+                    </div>
+                    <div class="item w-full">
+                        <img src="./assets/img/105.png" alt="" class="rounded-md w-full">
+                    </div>
+                </div>
 
             </div>
 
@@ -162,5 +195,27 @@
             </div>
         </div>
     </section>
+
+    <!-- jQuery -->
+    <script src="./assets/js/jquery-3.6.1.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#bannerCarousel').owlCarousel({
+                loop:true,
+                autoplay:true,
+                autoplayTimeout:3000,
+                autoplayHoverPause:false,
+                margin:0,
+                nav:true,
+                items: 1,
+                dots: true,
+            });
+    
+        });
+            
+    </script>
 </body>
 </html>
