@@ -111,6 +111,10 @@
                         <span>Consumer Electronics</span>
                     </a>
                     <a href="" class="singleSideCat">
+                        <span class="text-md"><i class="fa-solid fa-dharmachakra"></i></span>
+                        <span>Outdoor, Fun & Sports</span>
+                    </a>
+                    <a href="" class="singleSideCat">
                         <span class="text-md"><i class="fa-brands fa-watchman-monitoring"></i></span>
                         <span>Jewelry & Watches</span>
                     </a>
@@ -151,7 +155,7 @@
                 </div>
 
                 <!-- Carousel Section -->
-                <div class="owl-carousel owl-theme relative" id="bannerCarousel">
+                <div class="owl-carousel owl-theme relative overflow-hidden block" id="bannerCarousel">
                     <div class="item w-full">
                         <img src="./assets/img/16.webp" alt="" class="rounded-md w-full">
                     </div>
@@ -172,6 +176,86 @@
                     </div>
                     <div class="item w-full">
                         <img src="./assets/img/105.png" alt="" class="rounded-md w-full">
+                    </div>
+                </div>
+                
+                <!-- Discount Card -->
+                <div class="bg-[url('/dist/assets/img/11.jpeg')] px-5 py-3 rounded-md bg-no-repeat bg-cover block">
+
+                    <div class="flex justify-betweeen items-center gap-x-4">
+                        <div class="text-white w-[32%] flex flex-col justify-between gap-3">
+                            <div>
+                                <h3 class="text-xl font-bold">Welcome to AliExpres</h3>
+                                <p>Get items up to 70% off or get a coupon!</p>
+                            </div>
+                            <a href="" class="block bg-[url('/dist/assets/img/12.png')] bg-contain bg-no-repeat px-3 py-2.5 text-gray-800 text-xl">BDT 406.63</a>
+                        </div>
+                        <div class="owl-carousel owl-theme relative w-[65%]" id="bannerDC">
+                            <div class="item">
+                                <div class="bg-white rounded-md text-center">
+                                    <div class="thumb p-2">
+                                        <img src="./assets/img/22.jpeg" alt="" class="w-full">
+                                    </div>
+
+                                    <div class="cartContent -mt-5 pb-3">
+                                        <button class="px-3 py-[0.20rem] rounded-full bg-redPraimay text-sm font-bold text-white">BDT 1.02</button>
+                                        <h4 class="line-through text-sm text-gray-600 pt-1">BDT 442.21</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="bg-white rounded-md text-center">
+                                    <div class="thumb p-2">
+                                        <img src="./assets/img/21.jpeg" alt="" class="w-full max-h-[5.6rem]">
+                                    </div>
+
+                                    <div class="cartContent -mt-5 pb-3">
+                                        <button class="px-3 py-[0.20rem] rounded-full bg-redPraimay text-sm font-bold text-white">BDT 1.02</button>
+                                        <h4 class="line-through text-sm text-gray-600 pt-1">BDT 442.21</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="bg-white rounded-md text-center">
+                                    <div class="thumb p-2">
+                                        <img src="./assets/img/23.jpeg" alt="" class="w-full max-h-[5.6rem]">
+                                    </div>
+
+                                    <div class="cartContent -mt-5 pb-3">
+                                        <button class="px-3 py-[0.20rem] rounded-full bg-redPraimay text-sm font-bold text-white">BDT 1.02</button>
+                                        <h4 class="line-through text-sm text-gray-600 pt-1">BDT 442.21</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="bg-white rounded-md text-center">
+                                    <div class="thumb p-2">
+                                        <img src="./assets/img/20.jpeg" alt="" class="w-full max-h-[5.6rem]">
+                                    </div>
+
+                                    <div class="cartContent -mt-5 pb-3">
+                                        <button class="px-3 py-[0.20rem] rounded-full bg-redPraimay text-sm font-bold text-white">BDT 1.02</button>
+                                        <h4 class="line-through text-sm text-gray-600 pt-1">BDT 442.21</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="bg-white rounded-md text-center">
+                                    <div class="thumb p-2">
+                                        <img src="./assets/img/22.jpeg" alt="" class="w-full max-h-[5.6rem]">
+                                    </div>
+
+                                    <div class="cartContent -mt-5 pb-3">
+                                        <button class="px-3 py-[0.20rem] rounded-full bg-redPraimay text-sm font-bold text-white">BDT 1.02</button>
+                                        <h4 class="line-through text-sm text-gray-600 pt-1">BDT 442.21</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -212,6 +296,17 @@
                 nav:true,
                 items: 1,
                 dots: true,
+            });
+
+            $('#bannerDC').owlCarousel({
+                loop:true,
+                autoplay:true,
+                autoplayTimeout:3000,
+                autoplayHoverPause:false,
+                margin:5,
+                nav:true,
+                items: 4,
+                dots: false,
             });
     
         });
