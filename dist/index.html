@@ -95,10 +95,6 @@
 
                 <div class="categories">
                     <a href="" class="singleSideCat">
-                        <span class="text-md"><i class="fa-solid fa-shirt"></i></span>
-                        <span>Woman's Fashion</span>
-                    </a>
-                    <a href="" class="singleSideCat">
                         <span class="text-md"><i class="fa-solid fa-mobile-screen-button"></i></span>
                         <span>Phones & Telecommunications</span>
                     </a>
@@ -155,7 +151,7 @@
 
             <!-- Slider -->
             <div class="sliderArea w-[56%] my-4 block overflow-hidden">
-                <div class="sliderCategory space-x-8 mb-4">
+                <div class="sliderCategory space-x-8 mb-4 mt-3">
                     <a href="" class="text-lg uppercase font-bold text-amber-500">plus</a>
                     <a href="" class="carouselCat">Cool Home Gadget</a>
                     <a href="" class="carouselCat">Super Deals</a>
@@ -270,13 +266,13 @@
             </div>
 
             <!-- Right Sidebar -->
-            <div class="rightSidebar my-4 w-[22%] bg-white block overflow-hidden">
+            <div class="rightSidebar my-4 w-[22%] bg-white block overflow-hidden mt-[4.5rem] rounded-md">
 
                 <!-- Registration Section -->
                 <div class="relative">
                     <img src="./assets/img/righ-userbg.png" alt="" class="">
                     <div class="userRegistration absolute top-8 left-0 right-0">
-                        <img src="./assets/img/11.webp" alt="" class="h-16 mx-auto ">
+                        <img src="./assets/img/11.webp" alt="" class="h-12 mx-auto ">
                         <h3 class="text-center font-extrabold">Welcome to AliExpress</h3>
                         <div class="group flex justify-around mx-5 mt-5 overflow-hidden">
                             <button class="px-5 py-2 text-sm bg-gradient-to-r from-redPraimay to-redSecondary text-white rounded-full font-semibold">Register</button>
@@ -288,17 +284,17 @@
                 <!-- Reegistration Section End -->
 
                 <!-- Exclusive Offer -->
-                <div class="bg-[url('/dist/assets/img/13.jpeg')] bg-cover bg-no-repeat bg-right px-3 py-4 m-3 mt-24 rounded-md overflow-hidden">
+                <div class="bg-[url('/dist/assets/img/13.jpeg')] bg-cover bg-no-repeat bg-top px-3 py-4 m-3 mt-16 rounded-md overflow-hidden">
                     <p class="text-white text-sm">Exclusive Offers</p>
                     <h2 class="text-white font-bold text-[1.2rem] leading-6 mt-1">Just for new AliExpres members!</h2>
 
 
-                    <div class="owl-carousel owl-theme relative block overflow-hidden mt-32" id="newMOffer">
+                    <div class="owl-carousel owl-theme relative block overflow-hidden mt-20" id="newMOffer">
                        
                         <div class="item">
                             <div class="bg-white rounded-md text-center">
                                 <div class="thumb p-2">
-                                    <img src="./assets/img/22.jpeg" alt="" class="object-cover max-h-20">
+                                    <img src="./assets/img/22.jpeg" alt="" class="object-cover max-h-16">
                                 </div>
 
                                 <div class="cartContent -mt-4 pb-3">
@@ -310,7 +306,7 @@
                         <div class="item">
                             <div class="bg-white rounded-md text-center">
                                 <div class="thumb p-2">
-                                    <img src="./assets/img/31.jpeg" alt="" class="object-cover max-h-20">
+                                    <img src="./assets/img/31.jpeg" alt="" class="object-cover max-h-16">
                                 </div>
 
                                 <div class="cartContent -mt-4 pb-3">
@@ -322,7 +318,7 @@
                         <div class="item">
                             <div class="bg-white rounded-md text-center">
                                 <div class="thumb p-2">
-                                    <img src="./assets/img/32.jpeg" alt="" class="object-cover	max-h-20">
+                                    <img src="./assets/img/32.jpeg" alt="" class="object-cover	max-h-16">
                                 </div>
 
                                 <div class="cartContent -mt-4 pb-3">
@@ -334,7 +330,7 @@
                         <div class="item">
                             <div class="bg-white rounded-md text-center">
                                 <div class="thumb p-2">
-                                    <img src="./assets/img/33.jpeg" alt="" class="object-cover	max-h-20">
+                                    <img src="./assets/img/33.jpeg" alt="" class="object-cover	max-h-16">
                                 </div>
 
                                 <div class="cartContent -mt-4 pb-3">
@@ -371,7 +367,7 @@
 
             $('#bannerDC').owlCarousel({
                 loop:true,
-                autoplay:true,
+                autoplay:false,
                 autoplayTimeout:3500,
                 autoplayHoverPause:false,
                 margin:5,
@@ -383,7 +379,7 @@
             $('#newMOffer').owlCarousel({
                 loop:true,
                 autoplay:true,
-                autoplayTimeout:3500,
+                autoplayTimeout:3000,
                 autoplayHoverPause:false,
                 margin:10,
                 nav:true,

@@ -5,9 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-gradient{
+/* .bg-gradient{
     @apply bg-gradient-to-r from-redPraimay to-redSecondary;
-}
+} */
 
 /* Top Link */
 .topLink{
