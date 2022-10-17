@@ -664,6 +664,16 @@ video {
   margin-bottom: 0.25rem;
 }
 
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.-mx-2{
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
 .mt-5{
   margin-top: 1.25rem;
 }
@@ -1087,6 +1097,11 @@ video {
 .py-\[0\.15rem\]{
   padding-top: 0.15rem;
   padding-bottom: 0.15rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pr-2{

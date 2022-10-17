@@ -15,8 +15,10 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body class="font-openSans bg-gray-100">
+    
+    <div class="saveAreaWrapper mx-2">
     <!-- Header Start -->
-    <header class="bg-white hidden md:block lg:block">
+    <header class="bg-white hidden -mx-2 md:block lg:block">
         <!-- Header Top -->
         <div class="header_top bg-gray-50 border-b-[0.1rem]">
             <div class="container mx-auto">
@@ -84,7 +86,7 @@
     <!-- Header End -->
 
     <!-- Header Mobile -->
-    <header class="shadow-md bg-white lg:hidden px-5 py-3">
+    <header class="shadow-md bg-white lg:hidden px-5 py-3 -mx-2">
         <div class="flex justify-between items-center">
             <!-- Menu -->
             <button id="openNav">
@@ -125,7 +127,7 @@
                     </button>
                 </div>
                 <div class="mt-5 overflow-auto">
-                 
+                
                     <a href="" class="singleSideCat">
                         <span class="text-md"><i class="fa-solid fa-laptop"></i></span>
                         <span>Computer, Office & Security</span>
@@ -174,7 +176,7 @@
                         </span>
                         <span>Tools, Home Improvement</span>
                     </a>
-                   
+                
                 </div>
             </div>
         </div>
@@ -390,7 +392,7 @@
 
 
                     <div class="owl-carousel owl-theme relative block overflow-hidden mt-20" id="newMOffer">
-                       
+                    
                         <div class="item">
                             <div class="bg-white rounded-md text-center">
                                 <div class="thumb p-2">
@@ -453,13 +455,13 @@
         <!-- Container -->
         <div class="container mx-auto bg-white rounded-md shadow-sm p-4 mb-4">
 
-            <div class="dealHeader flex flex-col justify-start items-center md:flex-row lg:flex-row">
+            <div class="dealHeader flex flex-col justify-between items-center md:flex-row lg:flex-row">
                 <div class="flex items-center">
                     <img src="./assets/img/51.png" alt="">
                     
-                    <div class="flex flex-col items-center space-x-3 md:flex-row lg:flex-row">
+                    <div class="flex flex-col items-center space-x-2 md:flex-row lg:flex-row">
                         <h3 class="text-gray-600 text-lg hidden md:block lg:block md:text-xl">Top Products, incredible price.</h3>
-                        <div class="flex gap-x-2">
+                        <div class="flex gap-x-1">
                             <div class="bg-black text-white px-1 rounded-sm">23</div>
                             <span>:</span>
                             <div class="bg-black text-white px-1 rounded-sm">09</div>
@@ -522,8 +524,8 @@
                     <span class="text-gray-600 font-thin text-sm">1080 orders</span>
                 </div>
 
-                 <!-- Single Card 05 -->
-                 <div class="singleDProduct">
+                <!-- Single Card 05 -->
+                <div class="singleDProduct">
                     <div class="bg-gray-100 hover:bg-white">
                         <img src="./assets/img/65.jpeg" alt="">
                     </div>
@@ -534,8 +536,8 @@
                     <span class="text-gray-600 font-thin text-sm">1080 orders</span>
                 </div>
 
-                 <!-- Single Card 06 -->
-                 <div class="singleDProduct">
+                <!-- Single Card 06 -->
+                <div class="singleDProduct">
                     <div class="bg-gray-100 hover:bg-white">
                         <img src="./assets/img/66.jpeg" alt="">
                     </div>
@@ -575,8 +577,8 @@
                     <span class="text-gray-600 font-thin text-sm line-through">BDT 10,101.49</span>
                 </a>
 
-                 <!-- Single Card 02 -->
-                 <a href="" class="singleDProduct cursor-pointer">
+                <!-- Single Card 02 -->
+                <a href="" class="singleDProduct cursor-pointer">
                     <div class="bg-gray-100 p-2 rounded-md hover:bg-white">
                         <img src="./assets/img/71.png" alt="">
                     </div>
@@ -892,6 +894,7 @@
         </div>
     </section>
     <!-- Main Products End -->
+    </div>
 
     <!-- jQuery -->
     <script src="./assets/js/jquery-3.6.1.min.js"></script>
