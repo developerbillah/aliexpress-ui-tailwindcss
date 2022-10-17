@@ -1,13 +1,14 @@
 /* Google Fonts  */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* .bg-gradient{
+.bg-gradient{
     @apply bg-gradient-to-r from-redPraimay to-redSecondary;
-} */
+}
 
 /* Top Link */
 .topLink{

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AliExpress Clone Using Tailwind CSS</title>
 
+    <link rel="stylesheet" href="./assets/css/flip.min.css">
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
     <!-- Foontawesome CDN -->
@@ -13,9 +14,9 @@
     <!-- Link CSS -->
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
-<body class="font-openSans">
+<body class="font-openSans bg-gray-100">
     <!-- Header Start -->
-    <header>
+    <header class="bg-white">
         <!-- Header Top -->
         <div class="header_top bg-gray-50 border-b-[0.1rem]">
             <div class="container mx-auto">
@@ -346,11 +347,191 @@
             </div>
         </div>
     </section>
+    <!-- Carousel Section End -->
+
+    <!-- Super Deal Start -->
+    <section class="superDeals">
+        <!-- Container -->
+        <div class="container mx-auto bg-white rounded-md shadow-sm p-4 mb-4">
+
+            <div class="dealHeader flex flex-col justify-between items-center md:flex-row lg:flex-row">
+                <div class="flex flex-col items-center md:flex-row lg:flex-row">
+                    <img src="./assets/img/51.png" alt="">
+                    <div class="flex flex-col items-center space-x-3 md:flex-row lg:flex-row">
+                        <h3 class="text-gray-600 text-lg md:text-xl">Top Products, incredible price.</h3>
+                        <div class="flex gap-x-2">
+                            <div class="bg-black text-white px-1 rounded-sm">23</div>
+                            <span>:</span>
+                            <div class="bg-black text-white px-1 rounded-sm">09</div>
+                            <span>:</span>
+                            <div class="bg-black text-white px-1 rounded-sm">60</div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="" class="text-sm hover:text-redPraimay">View more</a>
+            </div>
+
+            <!-- Deals Products -->
+            <div class="grid grid-cols-2 gap-1 md:grid-cols-6 lg:grid-cols-6 mt-5">
+                <!-- Single Card 01 -->
+                <div class="singleDProduct">
+                    <div class="bg-gray-100 hover:bg-white">
+                        <img src="./assets/img/61.webp" alt="">
+                    </div>
+                    <div class="flex items-center gap-x-1 mt-4">
+                        <h3 class="text-lg font-bold">BDT 45.87</h3>
+                        <button class="bg-gradient text-white text-sm px-[0.3rem] py-[0.15rem] font-bold rounded-md">-72%</button>
+                    </div>
+                    <span class="text-gray-600 font-thin text-sm">1080 orders</span>
+                </div>
+
+                <!-- Single Card 02 -->
+                <div class="singleDProduct">
+                    <div class="bg-gray-100 hover:bg-white">
+                        <img src="./assets/img/62.jpeg" alt="">
+                    </div>
+                    <div class="flex items-center gap-x-1 mt-4">
+                        <h3 class="text-lg font-bold">BDT 45.87</h3>
+                        <button class="bg-gradient text-white text-sm px-[0.3rem] py-[0.15rem] font-bold rounded-md">-72%</button>
+                    </div>
+                    <span class="text-gray-600 font-thin text-sm">1080 orders</span>
+                </div>
+
+                <!-- Single Card 03 -->
+                <div class="singleDProduct">
+                    <div class="bg-gray-100 hover:bg-white">
+                        <img src="./assets/img/63.jpeg" alt="">
+                    </div>
+                    <div class="flex items-center gap-x-1 mt-4">
+                        <h3 class="text-lg font-bold">BDT 45.87</h3>
+                        <button class="bg-gradient text-white text-sm px-[0.3rem] py-[0.15rem] font-bold rounded-md">-72%</button>
+                    </div>
+                    <span class="text-gray-600 font-thin text-sm">1080 orders</span>
+                </div>
+
+                <!-- Single Card 04 -->
+                <div class="singleDProduct">
+                    <div class="bg-gray-100 hover:bg-white">
+                        <img src="./assets/img/64.jpeg" alt="">
+                    </div>
+                    <div class="flex items-center gap-x-1 mt-4">
+                        <h3 class="text-lg font-bold">BDT 45.87</h3>
+                        <button class="bg-gradient text-white text-sm px-[0.3rem] py-[0.15rem] font-bold rounded-md">-72%</button>
+                    </div>
+                    <span class="text-gray-600 font-thin text-sm">1080 orders</span>
+                </div>
+
+                 <!-- Single Card 05 -->
+                 <div class="singleDProduct">
+                    <div class="bg-gray-100 hover:bg-white">
+                        <img src="./assets/img/65.jpeg" alt="">
+                    </div>
+                    <div class="flex items-center gap-x-1 mt-4">
+                        <h3 class="text-lg font-bold">BDT 45.87</h3>
+                        <button class="bg-gradient text-white text-sm px-[0.3rem] py-[0.15rem] font-bold rounded-md">-72%</button>
+                    </div>
+                    <span class="text-gray-600 font-thin text-sm">1080 orders</span>
+                </div>
+
+                 <!-- Single Card 06 -->
+                 <div class="singleDProduct">
+                    <div class="bg-gray-100 hover:bg-white">
+                        <img src="./assets/img/66.jpeg" alt="">
+                    </div>
+                    <div class="flex items-center gap-x-1 mt-4">
+                        <h3 class="text-lg font-bold">BDT 45.87</h3>
+                        <button class="bg-gradient text-white text-sm px-[0.3rem] py-[0.15rem] font-bold rounded-md">-72%</button>
+                    </div>
+                    <span class="text-gray-600 font-thin text-sm">1080 orders</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Super Deal End -->
+
+    <!-- 50% Discount Start -->
+    <section class="superDeals">
+        <!-- Container -->
+        <div class="container mx-auto bg-white rounded-md shadow-sm p-4 mb-4">
+
+            <div class="dealHeader flex justify-between items-center">
+                <a href="">
+                    <img src="./assets/img/fifty_percent.png" alt="">
+                </a>
+
+                <a href="" class="text-sm hover:text-redPraimay">View more</a>
+            </div>
+
+            <!-- Deals Products -->
+            <div class="grid grid-cols-2 gap-3 md:grid-cols-6 lg:grid-cols-6 mt-5">
+                <!-- Single Card 01 -->
+                <a href="" class="singleDProduct cursor-pointer">
+                    <div class="bg-gray-100 p-2 rounded-md hover:bg-white">
+                        <img src="./assets/img/70.png" alt="" class="rounded-sm">
+                    </div>
+                    <h3 class="text-xl font-bold mt-2">BDT 1,313.19</h3>
+                    <span class="text-gray-600 font-thin text-sm line-through">BDT 10,101.49</span>
+                </a>
+
+                 <!-- Single Card 02 -->
+                 <a href="" class="singleDProduct cursor-pointer">
+                    <div class="bg-gray-100 p-2 rounded-md hover:bg-white">
+                        <img src="./assets/img/71.png" alt="">
+                    </div>
+                    <h3 class="text-xl font-bold mt-2">BDT 1,313.19</h3>
+                    <span class="text-gray-600 font-thin text-sm line-through">BDT 10,101.49</span>
+                </a>
+
+                <!-- Single Card 03 -->
+                <a href="" class="singleDProduct cursor-pointer">
+                    <div class="bg-gray-100 p-2 rounded-md hover:bg-white">
+                        <img src="./assets/img/72.png" alt="">
+                    </div>
+                    <h3 class="text-xl font-bold mt-2">BDT 1,313.19</h3>
+                    <span class="text-gray-600 font-thin text-sm line-through">BDT 10,101.49</span>
+                </a>
+
+                <!-- Single Card 04 -->
+                <a href="" class="singleDProduct cursor-pointer">
+                    <div class="bg-gray-100 p-2 rounded-md hover:bg-white">
+                        <img src="./assets/img/73.png" alt="">
+                    </div>
+                    <h3 class="text-xl font-bold mt-2">BDT 1,313.19</h3>
+                    <span class="text-gray-600 font-thin text-sm line-through">BDT 10,101.49</span>
+                </a>
+
+                <!-- Single Card 05 -->
+                <a href="" class="singleDProduct cursor-pointer">
+                    <div class="bg-gray-100 p-2 rounded-md hover:bg-white">
+                        <img src="./assets/img/74.png" alt="">
+                    </div>
+                    <h3 class="text-xl font-bold mt-2">BDT 1,313.19</h3>
+                    <span class="text-gray-600 font-thin text-sm line-through">BDT 10,101.49</span>
+                </a>
+
+                <!-- Single Card 06 -->
+                <a href="" class="singleDProduct cursor-pointer">
+                    <div class="bg-gray-100 p-2 rounded-md hover:bg-white">
+                        <img src="./assets/img/75.png" alt="">
+                    </div>
+                    <h3 class="text-xl font-bold mt-2">BDT 1,313.19</h3>
+                    <span class="text-gray-600 font-thin text-sm line-through">BDT 10,101.49</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <!-- Up to 50% Discount End -->
+
 
     <!-- jQuery -->
     <script src="./assets/js/jquery-3.6.1.min.js"></script>
     <!-- Owl Carousel -->
     <script src="./assets/js/owl.carousel.min.js"></script>
+
+    <script src="./assets/js/flip.min.js"></script>
 
     <script>
         $(document).ready(function(){
@@ -386,7 +567,19 @@
                 items: 2,
                 dots: false,
             });
-    
+
+            function handleTickInit(tick) {
+                Tick.helper.interval(function(){
+                    var d = Tick.helper.date();
+                    tick.value = {
+                        sep: '.',
+                        hours: d.getHours(),
+                        minutes: d.getMinutes(),
+                        seconds: d.getSeconds()
+                    };
+                });
+            }
+                    
         });
             
     </script>
