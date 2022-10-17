@@ -43,7 +43,7 @@
 
 /* Carusel Category */
 .carouselCat{
-    @apply text-lg font-bold hover:text-redPraimay transition duration-500;
+    @apply text-sm font-bold hover:text-redPraimay transition duration-500 md:text-xl lg:text-xl;
 }
 
 /* Carousel Next, Prev & Indicator */
